@@ -1,6 +1,10 @@
 <html>
     <head>
+        <title>
+            Cascos D &#38; S - Cont&aacute;ctenos
+        </title>
         <meta charset="UTF-8">
+        <link type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
             <link href="css/css.txt" type="text/css" rel="stylesheet"/>
     </head>
         <body>
@@ -12,47 +16,62 @@
             </div>
                 <div class="contenedor-fila">
                     <div class="contenedor-centro tamano-90">
-                        <nav>              
-                            <li><a  href="index.html"><b>Inicio</b></a></li>
+                        <button-block>
+                        <nav>
+                            <a href="index.html" type="button" class="btn btn-default">Inicio</a>
                        </nav>
+                       </button-block>
                 <h2 class="super-titulo letra-blanca texto-centro">Cont&aacute;ctenos</h2>
             <div class="contenedor-columna-izquierda tamano-100">
                     <div class="row">
-        <div class="col-sm-6">
+        <div class="texto-centro">
         <form class="form-horizontal">
                 <div class="form-group">
-            <label for="_nombre" class="letra-blanca col-sm-2 control-label">Nombre</label>
-            <div class="col-sm-10">
+            <label for="_nombre" class="letra-blanca col-sm-1 control-label">Nombre</label>
+            <div class="col-sm-4">
             <input type="text" class="form-control" id="_nombre" placeholder="Nombre">
             </div>
                 </div>
                 <div class="form-group">
-            <label for="_apellido" class="letra-blanca col-sm-2 control-label">Apellido</label>
-            <div class="col-sm-10">
+            <label for="_apellido" class="letra-blanca col-sm-1 control-label">Apellido</label>
+            <div class="col-sm-4">
             <input type="text" class="form-control" id="_apellido" placeholder="Apellido">
             </div>
                 </div>
+            <div class="form-group">
+            <label for="_correoelectronico" class="letra-blanca col-sm-1 control-label">Correo</label>
+            <div class="col-sm-4">
+            <input type="email" class="form-control" id="_correoelectronico" placeholder="Correo electr&oacute;nico">
+            </div>
+                </div>
              <br>
-            <label for="_fechadenacimiento" class="letra-blanca">
-                Fecha de nacimiento
-            </label>
+            <label for="_fechadenacimiento" class="letra-blanca col-sm-1 control-label">Fecha de nacimiento</label>
+            <div class="col-sm-2">
             <input type="date" id="_fechadenacimiento" placeholder="fecha de nacimiento">
+            </div>
             <br>
             <br>
-            <label for="_intereses" class="letra-blanca">
-                intereses
-            </label>
-            <textarea id="_intereses" placeholder="intereses del usuario">
+            <br>
+            <label for="_intereses" class="letra-blanca col-sm-1">intereses</label>
+            <textarea class="form-control" id="_intereses" rows="4" placeholder="intereses del usuario">
             </textarea>
             <br>
-            <br>
+            <div class="form-group">
+            <label for="_checkbox" class="letra-blanca col-sm-2">Recibir informaci&oacute;n al correo</label>
+                <div class="col-sm-1">
+                    <input type=checkbox>
+                </div>
+            
+            </div>
             <input type="submit"> 
+            </form>
             </div>
             </div>
             </div>
             </div>
             </div>
             </div>
-            </div>
+            <script src="bower_components/jquery/dist/jquery.js"></script>
+            <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
         </body>
 </html>
